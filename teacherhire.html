@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .container {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .apply_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 80%;
+      width: 80%;
+      padding: 20px;
+      background-color: white;
+
+
+
+    }
+
+    .title_small {
+      font-size: 20px;
+    }
+
+    .form_container {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .form_control {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    input:focus {
+      outline-color: rgb(36, 36, 74);
+    }
+
+    .button_container {
+      display: flex;
+
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: rgb(47, 5, 156);
+
+      padding: 5px 10px;
+      color: white;
+      margin-bottom: 10px;
+
+    }
+
+    button:hover {
+      background-color: #ffffff;
+      border: 2px solid#2c2255;
+      color: black;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+    }
+
+    .textarea_control {
+      grid-column: 1 / span 2;
+    }
+
+    .textarea_control textarea {
+      width: 100%;
+    }
+
+    @media (max-width: 560px) {
+      .textarea_control {
+        grid-column: 1 / span 1;
+      }
+    }
+
+    /* @media (max-width: 460px) {
+        {
+        grid-column: 1 / span 1;
+      }
+    } */
+
+    .poster img {
+      width: 100%;
+      height: 50vh;
+      margin-top: 40px;
+
+
+    }
+
+    @media screen and (max-width: 1100px) {
+      .poster img {
+        width: 100%;
+        height: 35vh;
+
+
+      }
+
+    }
+
+    @media screen and (max-width: 500px) {
+      .poster img {
+        width: 100%;
+        max-width: 100%;
+        height: 30vh;
+        margin-top: 30px;
+
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div>
+    <img src="header last.png" alt="" style="width: 100%;">
+  </div>
+  <!--   *** Website Container Starts ***   -->
+  <div class="website-container">
+
+    <!--   *** Home Section Starts ***   -->
+    <section class="home" id="home">
+      <!--   === Main Navbar Starts ===   -->
+      <nav class="main-navbar">
+        <a href="#home" class="logo">
+          <h1>JPS</h1>
+        </a>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://forms.gle/bvSxEwscDKPpBFgDA" target="main">Admission</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="Fee & Scholarship.html">Fee & Scholarship</a></li>
+          <li><a href="schoolgalley.html">Gallery</a></li>
+          <li><a href="Results.html">Results</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+        </ul>
+
+        <div class="menu-btn">
+          <span></span>
+        </div>
+      </nav>
+
+
+
+      <div class="poster">
+        <img src="Hiring2018.jpg" alt="img">
+      </div>
+
+      <div style="display: flex;align-items: center;justify-content: center;margin-top: 20px;">
+        <h1>
+          Job Application
+          <span class="title_small">(Teacher)</span>
+        </h1>
+      </div>
+
+
+      <div class="container">
+        <div class="apply_box">
+
+          <form action="">
+            <div class="form_container">
+              <div class="form_control">
+                <label for="first_name"> First Name </label>
+                <input id="first_name" name="first_name" placeholder="Enter First Name..." />
+              </div>
+              <div class="form_control">
+                <label for="last_name"> Last Name </label>
+                <input id="last_name" name="last_name" placeholder="Enter Last Name..." />
+              </div>
+              <div class="form_control">
+                <label for="email"> Mobile No. </label>
+                <input type="email" id="email" name="email" placeholder="Enter Mobile No..." />
+              </div>
+              <div class="form_control">
+                <label for="email"> Email </label>
+                <input type="email" id="email" name="email" placeholder="Enter Email..." />
+              </div>
+
+              <div class="form_control">
+                <label for="job_role"> Qualification </label>
+                <select id="job_role" name="job_role">
+                  <option value="">Select Your Qualification</option>
+                  <option value="Mathematic">10th Pass</option>
+                  <option value="Science">12th Pass</option>
+                  <option value="English">B A</option>
+                  <option value="Hindi">Be.d</option>
+                  <option value="Social Science">BA + MA</option>
+                  <option value="Sanscrit">Bsc</option>
+                  <option value="Geography">Bsc + Be.d</option>
+                  <option value="History">History</option>
+                  <option value="Computer">Computer</option>
+                </select>
+              </div>
+              <div class="form_control">
+                <label for="job_role"> Job Role </label>
+                <select id="job_role" name="job_role">
+                  <option value="">Select Job Role</option>
+                  <option value="Mathematic">Mathematic</option>
+                  <option value="Science">Science</option>
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Social Science">Social Science</option>
+                  <option value="Sanscrit">Sanscrit</option>
+                  <option value="Geography">Geography</option>
+                  <option value="History">History</option>
+                  <option value="Computer">Computer</option>
+                </select>
+              </div>
+              <div class="form_control">
+                <label for="job_role"> REET Qualification </label>
+                <select id="job_role" name="job_role">
+                  <option value="">Select Option</option>
+                  <option value="Mathematic">Yes</option>
+                  <option value="Science">No</option>
+
+                </select>
+              </div>
+              <div class="textarea_control">
+                <label for="address"> Address </label>
+                <textarea id="address" name="address" row="4" cols="50" placeholder="Enter Address"></textarea>
+              </div>
+              <div class="form_control">
+                <label for="city"> City </label>
+                <input id="city" name="city" placeholder="Enter City Name..." />
+              </div>
+              <div class="form_control">
+                <label for="pincode"> Pincode </label>
+                <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode Name..." />
+              </div>
+              <div class="form_control">
+                <label for="date"> Date </label>
+                <input value="2022-01-10" type="date" id="date" name="date" />
+              </div>
+              <div class="form_control">
+                <label for="upload"> Upload Your Resume </label>
+                <input type="file" id="upload" name="upload" />
+              </div>
+            </div>
+            <div class="button_container">
+              <button type="submit">Apply Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="footer" id="footer">
+
+      <div class="footer-image">
+
+        <!--   === Footer Contents Starts ===   -->
+        <div class="footer-contents">
+
+          <div class="footer-col footer-col-1">
+            <div class="col-title">
+              <img src="logopng.png">
+            </div>
+            <div class="col-contents">
+              <h2 style="color: #fff204;font-size: 35px; margin-bottom: 10px;">Jyoti Public School</h2>
+
+
+              <span style="color: white;">Jaisinghpura , Virat Nagar</span>
+              <span style="color: white;">Jaipur(Raj.) 303106</span>
+
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-2">
+            <div class="col-title">
+              <h3 style="color: yellow;">Contact Us</h3>
+            </div>
+            <div class="col-contents">
+
+
+
+              <div class="contact-row">
+                <span style="color: #ffffff;margin-bottom: 5px;">Phone</span>
+                <span>+01422295508</span>
+              </div>
+              <div class="contact-row">
+                <span style="color: #ffffff; margin-bottom: 5px;">Website</span>
+                <span>jyotipublicschool.com</span>
+              </div>
+              <div class="contact-row">
+                <span style="color: #ffffff; margin-bottom: 5px;">Email</span>
+                <span>Jps1122361@gmail.com</span>
+              </div>
+
+              <div class="social">
+                <h4 class="widget-title mb-10" style="color: yellow;">Connect With Us :</h4>
+
+
+                <div>
+                  <ul class="social-ul">
+                    <li style="color: #4267B2;"><i class="fab fa-twitter"></i></li>
+                    <li style="color: #E1306C;"><a href="https://www.instagram.com/jps_jaisighpura/"
+                            target="main" style="color: #E1306C;"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li style="color: #2867B2;"><i class="fab fa-linkedin-in"></i></li>
+                    <li style="color: #ff0000;"><a href="http://www.youtube.com/@JPSSchool23"
+                            target="main" style="color: #ff0000;"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col footer-col-3">
+            <div class="col-title">
+              <h3 style="color: yellow;">Follow us on facebook</h3>
+            </div>
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557356306525%26is_tour_completed%3Dtrue&tabs=timeline&width=300px&height=300px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
+              width="300px" height="300px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+          </div>
+
+          <div class="footer-col footer-col-4">
+            <div class="col-title">
+              <h3 style="color: yellow;">Newsletter</h3>
+            </div>
+            <div class="col-contents">
+              <form class="newsletter">
+                <input type="email" placeholder="Your Email">
+                <button class="newsletter-btn btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <!--   === Footer Contents Ends ===   -->
+        <div class="copy-rights">
+          <p>Created By <a href="https://ravi22110219.github.io/BidsukTechnoCreation/" style="text-decoration: none;"><b>Bidsuk Company</b> </a> <span
+              class="far fa-copyright" style="color: #ffffff;"></span> 2024 All rights reserved.</p>
+        </div>
+
+      </div>
+
+
+    </section>
+    <!--   *** Footer Section Ends ***   -->
+
+
+  </div>
+  <!--   *** Website Container Ends ***   -->
+
+
+
+  <!--   *** Link To JQuery ***   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+  <!--   *** Link To Curstom Script File ***   -->
+  <script type="text/javascript" src="script.js"></script>
+
+  <script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
