@@ -1,3 +1,40 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryImages = document.querySelectorAll(".gallery .images .card img");
+    const lightbox = document.querySelector(".gallery-lightbox");
+
+    if (!galleryImages.length || !lightbox) return;
+
+    const lightboxImage = lightbox.querySelector("img");
+    const closeButton = lightbox.querySelector(".gallery-lightbox__close");
+
+    const openLightbox = (image) => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt || "Jyoti Public Senior Secondary School gallery photo";
+        lightbox.classList.add("show");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    };
+
+    const closeLightbox = () => {
+        lightbox.classList.remove("show");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImage.src = "";
+        document.body.style.overflow = "";
+    };
+
+    galleryImages.forEach((image) => {
+        image.addEventListener("click", () => openLightbox(image));
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox.classList.contains("show")) closeLightbox();
+    });
+});
+
 // const imageWrapper = document.querySelector(".images");
 
 // const loadMoreBtn = document.querySelector(".gallery .load-more");
@@ -84,6 +121,5 @@
 // downloadImgBtn.addEventListener("click", (e) => downloadImg(e.target.dataset.img));
 
 //}
-
 
 
