@@ -166,51 +166,42 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
+const appSliderTrack = document.querySelector('.app-slider .last');
+const appSlides = document.querySelectorAll('.app-slider .itam');
+const appNextButton = document.getElementById('appnext');
+const appPreviousButton = document.getElementById('appprev');
 
+if (appSliderTrack && appSlides.length && appNextButton && appPreviousButton) {
+    let activeAppSlide = 0;
+    let appAutoplay;
 
+    const showAppSlide = (index) => {
+        activeAppSlide = (index + appSlides.length) % appSlides.length;
+        appSliderTrack.style.transform = `translateX(-${activeAppSlide * 100}%)`;
+    };
 
+    const startAppAutoplay = () => {
+        clearInterval(appAutoplay);
+        appAutoplay = setInterval(() => showAppSlide(activeAppSlide + 1), 4000);
+    };
 
+    appNextButton.addEventListener('click', () => {
+        showAppSlide(activeAppSlide + 1);
+        startAppAutoplay();
+    });
 
+    appPreviousButton.addEventListener('click', () => {
+        showAppSlide(activeAppSlide - 1);
+        startAppAutoplay();
+    });
 
-let appSlider = document.querySelector('.app-slider .last');
-let appItems = document.querySelectorAll('.app-slider .last .itam');
-let appnext = document.getElementById('appnext');
-let appprev = document.getElementById('appprev');
-let dots1 = document.querySelectorAll('.app-slider .dots1 li');
-
-let lengthItems1 = appItems.length - 1;
-let active1 = 0;
-appnext.onclick = function(){
-    active1 = active1 + 1 <= lengthItems1 ? active1 + 1 : 0;
-    reloadappSlider();
-}
-appprev.onclick = function(){
-    active1 = active1 - 1 >= 0 ? active1 - 1 : lengthItems1;
-    reloadappSlider();
-}
-let refreshInterval1 = setInterval(()=> {appnext.click()}, 3000);
-function reloadappSlider(){
-    appSlider.style.left = -appItems[active1].offsetLeft + 'px';
-    // 
-    let last_active1_dot = document.querySelector('.app-slider .dots1 li.active1');
-    last_active1_dot.classList.remove('active1');
-    dots1[active1].classList.add('active1');
-
-    clearInterval(refreshInterval1);
-    refreshInterval1 = setInterval(()=> {appnext.click()}, 3000);
-
-    
+    startAppAutoplay();
 }
 
-dots1.forEach((li, key) => {
-    li.addEventListener('click', ()=>{
-         active1 = key;
-         reloadappSlider();
-    })
-})
-window.onresize = function(event) {
-    reloadappSlider();
-};
+
+
+
+
 
 
 

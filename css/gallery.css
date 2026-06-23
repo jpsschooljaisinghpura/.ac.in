@@ -667,11 +667,36 @@ header .buttons i:last-child:hover {
 
  /*   === Footer Section Styling Starts ===   */
 section.footer {
-	background-image: url('back4.jpg');
+	background: linear-gradient(135deg, #172554 0%, #1e3a8a 55%, #1d4ed8 100%);
 	width: 100%;
 	padding: 70px 8% 30px;
-	background-color: #27beff34;
-	
+	color: #ffffff;
+}
+
+.footer .footer-image {
+	width: 100%;
+}
+
+.footer a {
+	color: #ffffff;
+}
+
+.footer .col-title h3,
+.footer .widget-title,
+.footer-col-1 .col-contents h2 {
+	color: #ffed00 !important;
+}
+
+.footer-col-2 .contact-row span,
+.footer-col-2 .contact-row a,
+.footer-col-1 .col-contents span {
+	color: #ffffff !important;
+}
+
+.footer .facebook-embed {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .footer .footer-contents {
@@ -749,24 +774,27 @@ section.footer {
 	width: 100%;
 	padding: 15px;
 	color: var(--dark-text-clr);
-	border: none;
+	border: 2px solid transparent;
 	border-radius: 5px;
-	
+	background: #ffffff;
+}
+
+.footer-col-4 .col-contents input:focus {
+	border-color: #ffed00;
+	outline: 3px solid rgba(255, 237, 0, 0.25);
 }
 
 .footer-col-4 .col-contents .newsletter-btn {
-	background-color: rgb(92, 93, 94);
-	color: rgb(255, 255, 255);
+	background-color: #ffed00;
+	color: #172554;
 	margin-top: 20px;
-	
-	
+	font-weight: 700;
 }
 
 .footer-col-4 .col-contents .newsletter-btn:hover {
-	background-color: white;
-	color: #0000ff;
-	border: 1px solid var(--light-heading-clr);
-	
+	background-color: #ffffff;
+	color: #1e3a8a;
+	border: 1px solid #ffed00;
 }
 
 .footer .copy-rights {
@@ -1017,6 +1045,8 @@ section.footer {
 	/* background: #4e4f4f; */
 	line-height: 30px;
 	border-radius: 50%;
+	background: #ffffff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 	margin-right: 10px;
 	cursor: pointer;
 	transition: .5s;
@@ -1028,6 +1058,15 @@ section.footer {
      
 
   }
+  .social-ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+  }
+  .social-ul li:nth-child(1){ color: #1877f2; }
+  .social-ul li:nth-child(2){ color: #e1306c; }
+  .social-ul li:nth-child(3){ color: #ff0000; }
   .social-ul li:before{
 	position: absolute;
 	content: '';
@@ -1049,7 +1088,7 @@ section.footer {
 	background: #E1306C;
   }
   .social-ul li:nth-child(3):before{
-	background: #2867B2;
+	background: #ff0000;
   }
   .social-ul li:nth-child(4):before{
 	background: #2c2255;

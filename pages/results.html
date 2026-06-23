@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>Board Exam Results | Jyoti Public School Jaipur</title>
-    <meta name="description" content="Outstanding board exam results at Jyoti Public School. 10th: 95% pass rate, 12th: 98% pass rate. View toppers and success stories.">
+    <title>Results | Jyoti Public Senior Secondary School Jaisinghpura</title>
+    <meta name="description" content="Jyoti Public Senior Secondary School Jaisinghpura achieved a 100% examination result for Classes 10 and 12 in 2025–26. View toppers and success stories.">
     <meta name="keywords" content="board results, CBSE results, exam results, toppers, 10th results, 12th results">
     <meta name="robots" content="index, follow">
     
     <!-- OpenGraph Tags -->
-    <meta property="og:title" content="Results | Jyoti Public School Jaipur">
-    <meta property="og:description" content="95%+ board exam pass rates with excellent performance by our students at Jyoti Public School.">
-    <meta property="og:url" content="https://jpsjaisinghpura.in/Results.html">
+    <meta property="og:title" content="Results | Jyoti Public Senior Secondary School Jaisinghpura">
+    <meta property="og:description" content="Outstanding student results at Jyoti Public Senior Secondary School Jaisinghpura.">
+    <meta property="og:url" content="https://jpsjaisinghpura.in/pages/results.html">
     <meta property="og:type" content="website">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://jpsjaisinghpura.in/Results.html">
+    <link rel="canonical" href="https://jpsjaisinghpura.in/pages/results.html">
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -51,6 +51,16 @@
         .image-container img {
             width: 60%;
             border-radius: 5px;
+        }
+
+        .image-container.historical-result img {
+            width: min(90%, 420px);
+            height: auto;
+            box-shadow: 0 10px 28px rgba(44, 34, 85, .18);
+        }
+
+        .image-container.historical-result.wide-result img {
+            width: min(92%, 1100px);
         }
 
       
@@ -141,7 +151,171 @@
 
         }
 
+        .result-feature {
+            width: min(1100px, 84%);
+            margin: 10px auto 65px;
+            padding: clamp(22px, 4vw, 42px);
+            background: linear-gradient(135deg, #f7f8ff 0%, #fff8d8 100%);
+            border: 1px solid #e7defa;
+            border-radius: 18px;
+            box-shadow: 0 14px 35px rgba(44, 34, 85, 0.14);
+        }
+
+        .result-feature h1 {
+            margin: 0 0 16px;
+            color: #2c2255;
+            font-size: clamp(26px, 4vw, 40px);
+        }
+
+        .result-feature .achievement-label {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: #2c2255;
+            color: #ffed00;
+            font-weight: 800;
+            letter-spacing: .4px;
+        }
+
+        .result-feature p {
+            margin: 0 0 24px;
+            color: #33334a;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        .result-feature img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+        }
+
+        .student-result-card {
+            width: min(900px, 84%);
+            margin: 0 auto 65px;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #ded9ef;
+            border-radius: 18px;
+            box-shadow: 0 14px 35px rgba(44, 34, 85, .12);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .student-result-heading {
+            padding: clamp(22px, 4vw, 36px);
+            text-align: center;
+            background: linear-gradient(135deg, #2c2255, #44378a);
+            color: #ffffff;
+        }
+
+        .student-result-heading .class-label {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 6px 13px;
+            border-radius: 999px;
+            background: #ffed00;
+            color: #2c2255;
+            font-weight: 800;
+        }
+
+        .student-result-heading h2 {
+            margin: 0 0 8px;
+            color: #ffffff;
+            font-size: clamp(25px, 4vw, 36px);
+        }
+
+        .student-result-heading p {
+            margin: 0;
+            color: #f2efff;
+            font-size: 17px;
+        }
+
+        .student-parent-name {
+            display: block;
+            margin: 0 0 10px;
+            color: #ffed00;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .student-result-table-wrap {
+            padding: clamp(18px, 4vw, 34px);
+            overflow-x: auto;
+        }
+
+        .student-result-table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #29263a;
+        }
+
+        .student-result-table th,
+        .student-result-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #e5e1ef;
+            text-align: left;
+        }
+
+        .student-result-table th {
+            background: #f2efff;
+            color: #2c2255;
+            font-weight: 800;
+        }
+
+        .student-result-table td:last-child,
+        .student-result-table th:last-child {
+            width: 120px;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .student-result-table tfoot td {
+            border-bottom: 0;
+            background: #fff9cf;
+            color: #2c2255;
+            font-size: 18px;
+        }
+
+        .result-appreciation {
+            padding: 0 clamp(18px, 4vw, 34px) 30px;
+            color: #4a465c;
+            line-height: 1.7;
+            text-align: center;
+        }
+
         @media screen and (max-width: 500px) {
+			.result-feature {
+				width: 92%;
+				margin-bottom: 40px;
+			}
+
+			.student-result-card {
+				width: 92%;
+			}
+
+			.student-result-table th,
+			.student-result-table td {
+				padding: 12px 10px;
+			}
+
+			.result-feature p {
+				font-size: 16px;
+			}
+
             .section-header h1 {
                 margin-left: 8%;
                 margin-right: 8%;
@@ -274,11 +448,11 @@
     </style>
     <div class="home-header-section">
         <div class="header-logo">
-            <img src="../images/icons/logopng.png" alt="Jyoti Public School Logo">
+            <img src="../images/icons/logopng.png" alt="Jyoti Public Senior Secondary School Logo">
         </div>
         <div class="header-center">
             <p class="header-message">A Second Home Where Every Child Learns, Grows, and Shines</p>
-            <h1>JYOTI PUBLIC SR SEC SCHOOL</h1>
+            <h1>JYOTI PUBLIC SENIOR SECONDARY SCHOOL</h1>
             <div class="location">JAISINGHPURA, VIRAT NAGAR, JAIPUR</div>
         </div>
         <div class="header-right">
@@ -313,10 +487,51 @@
 
             <!-- banner --->
 
+			<article class="result-feature">
+				<span class="achievement-label">Latest Result · Session 2025–26</span>
+				<h1>100% Result in Classes 10 and 12</h1>
+				<p>Jyoti Public Senior Secondary School proudly celebrates another 100% result in Classes 10 and 12. We congratulate Class 12 toppers Ankita Yadav, who achieved 91.60%, and Maina Gurjar, who achieved 89.40%. Their success reflects determined study, strong family support, and the dedicated guidance of our teachers.</p>
+				<img src="../images/misc/result-2025-26.jpeg" alt="Jyoti Public Senior Secondary School Class 12 toppers Ankita Yadav and Maina Gurjar for session 2025–26">
+			</article>
+
+			<article class="result-feature">
+				<span class="achievement-label">Session 2024–25</span>
+				<h1>Celebrating a 100% Result in Classes 10 and 12</h1>
+				<p>Jyoti Public Senior Secondary School proudly celebrates another outstanding academic milestone. Our 100% examination result reflects the determination of our students, the dedicated guidance of our teachers, and the constant encouragement of our families. Every achievement strengthens our commitment to disciplined learning, strong values, and helping every child reach their full potential.</p>
+				<img src="../images/misc/result-2024-25.jpg" alt="Jyoti Public Senior Secondary School Class 10 and 12 toppers and 100 percent result for the 2024–25 session">
+			</article>
+
+			<article class="student-result-card" aria-labelledby="class-5-result-title">
+				<header class="student-result-heading">
+					<span class="class-label">Class 5 Result · 2025</span>
+					<h2 id="class-5-result-title">Congratulations, Sapna!</h2>
+					<span class="student-parent-name">Daughter of Kalu Ram Gurjar</span>
+					<p>An excellent Grade A performance across all assessed subjects.</p>
+				</header>
+				<div class="student-result-table-wrap">
+					<table class="student-result-table">
+						<caption class="sr-only">Sapna's Class 5 subject grades for 2025</caption>
+						<thead>
+							<tr><th scope="col">Subject</th><th scope="col">Grade</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Hindi</td><td>A</td></tr>
+							<tr><td>English</td><td>A</td></tr>
+							<tr><td>Mathematics</td><td>A</td></tr>
+							<tr><td>Environmental Studies</td><td>A</td></tr>
+						</tbody>
+						<tfoot>
+							<tr><td>Overall Grade</td><td>A (Excellent)</td></tr>
+						</tfoot>
+					</table>
+				</div>
+				<p class="result-appreciation">Sapna's consistent Grade A achievement is a wonderful example of focus, curiosity, and sincere effort. Jyoti Public Senior Secondary School proudly celebrates her success and wishes her continued confidence and excellence in the years ahead.</p>
+			</article>
+
             <header class="section-header">
                 <h1>12th Art's RBSE Board Result 2023
                 </h1>
-                <p> jyoti Public School School is known as the Merritt factory of the RBSE board across the district. Since its inception, the institute is constantly presenting the best result all over district, whether it is for 10th or 12th classes.</p> 
+                <p>Jyoti Public Senior Secondary School has built a proud tradition of strong RBSE board performance. These results reflect the consistent effort of our students and the personal attention, academic discipline, and encouragement provided by our teaching team.</p>
             </header>
 
             <div class="wrapper">
@@ -336,25 +551,44 @@
     
                     <div class="image-container">
                         <img src="../images/misc/10thresult2023.jpg" alt="10th Result 2023">
-    
                     </div>
+
+					<header class="section-header">
+						<h1>Class 10 Achievement · Session 2019–20</h1>
+						<p>Jyoti Public Senior Secondary School proudly celebrates the excellent Class 10 performance of Sunil Kumar Yadav, who achieved 94.00%, and Sanjeev Kumawat, who achieved 93.50%. Their outstanding scores reflect focused preparation, perseverance, and the committed support of their teachers and families.</p>
+					</header>
+
+					<div class="image-container historical-result wide-result">
+						<img src="../images/misc/result-2019-20.png" alt="Jyoti Public Senior Secondary School Class 10 achievers Sunil Kumar Yadav and Sanjeev Kumawat for session 2019–20">
+					</div>
+
                     <header class="section-header">
-                        <h1>10th RBSE Board Result 2019
-                        </h1>
-                  
+                        <h1>10th RBSE Board Result 2019</h1>
                     </header>
-        
-                    <div class="wrapper" style="margin-bottom: 30px;">
-        
-                        <div class="image-container">
-                            <img src="../images/gallery/GAL-IMG3.jpg" alt="10th Result 2019">
-        
-                        </div>
-    
 
-             
+					<div class="image-container">
+						<img src="../images/gallery/GAL-IMG3.jpg" alt="10th RBSE Board Result 2019">
+					</div>
 
-            </div>
+					<header class="section-header">
+						<h1>Academic Achievement · Session 2016–17</h1>
+						<p>The 2016–17 result stands as another proud chapter in the history of Jyoti Public Senior Secondary School. We celebrate the hard work of every featured student and the dedicated guidance of the teachers who helped them progress with confidence and discipline.</p>
+					</header>
+
+					<div class="image-container historical-result">
+						<img src="../images/misc/result-2016-17.jpg" alt="Jyoti Public Senior Secondary School student result achievements for the 2016–17 session">
+					</div>
+
+					<header class="section-header">
+						<h1>Academic Achievement · Session 2015–16</h1>
+						<p>The 2015–16 result reflects the school's long-standing tradition of academic effort and achievement. Jyoti Public Senior Secondary School proudly remembers the students whose excellent performance inspired the school community and set a strong example for future learners.</p>
+					</header>
+
+					<div class="image-container historical-result wide-result" style="margin-bottom: 40px;">
+						<img src="../images/misc/result-2015-16.png" alt="Jyoti Public Senior Secondary School Class 12 result achievements for the 2015–16 session">
+					</div>
+				</div>
+			</div>
         </section>
 
         <!--   *** Footer Section Starts ***   -->
@@ -371,7 +605,7 @@
 						<img src="../images/icons/logopng.png">
 					</div>
 					<div class="col-contents">
-						<h2 style="color: #fff204;font-size: 35px; margin-bottom: 10px;">Jyoti Public School</h2>
+					<h2 style="color: #fff204;font-size: 35px; margin-bottom: 10px;">Jyoti Public Senior Secondary School</h2>
 						
 							
 							<span style="color: white;">Jaisinghpura , Virat Nagar</span>
@@ -404,11 +638,10 @@
 							
 
 						<div>
-							<ul class="social-ul">
-								<li style="color: #4267B2;"><i class="fab fa-twitter"></i></li>
-								<li style="color: #E1306C;"><i class="fab fa-instagram"></i></li>
-								<li style="color: #2867B2;"><i class="fab fa-linkedin-in"></i></li>
-								<li style="color: #2c2255;"><a href="https://www.youtube.com/watch?v=twGfO-4RC_I" target="main" style="color: #2c2255;"><i class="fab fa-youtube"></i></a></li>
+							<ul class="social-ul" aria-label="Jyoti Public Senior Secondary School social media">
+								<li><a href="https://www.facebook.com/profile.php?id=61557356306525" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/jps_jaisighpura/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/@JPSSchool23" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
 							 </ul></div>
 
 						   </div>
@@ -419,7 +652,7 @@
 					<div class="col-title">
 						<h3 style="color: yellow;">Follow us on facebook</h3>
 					</div>
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557356306525%26is_tour_completed%3Dtrue&tabs=timeline&width=300px&height=300px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="300px" height="300px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					<iframe class="facebook-embed" title="Jyoti Public Senior Secondary School Facebook page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61557356306525&amp;tabs=timeline&amp;width=340&amp;height=300&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" width="340" height="300" style="border:0;overflow:hidden;max-width:100%" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 					
 				</div>
 
@@ -467,5 +700,3 @@
 </body>
 
 </html>
-
-
