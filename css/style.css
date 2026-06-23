@@ -3045,4 +3045,73 @@ section.testimonials {
 	}
 }
 
-/* ========== ADMISSION PAGE STYLES END ========== 
+/* ========== ADMISSION PAGE STYLES END ========== */
+
+/* Featured homepage video */
+.featured-video-section {
+	padding: 72px 7%;
+	background: linear-gradient(145deg, #f5f7ff 0%, #ffffff 55%, #fff9df 100%);
+	text-align: center;
+}
+
+.featured-video-heading {
+	max-width: 820px;
+	margin: 0 auto 32px;
+}
+
+.featured-video-heading span {
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #b07d00;
+	font-size: 0.9rem;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.featured-video-heading h2 {
+	margin: 0 0 12px;
+	color: #20194a;
+	font-size: clamp(1.8rem, 4vw, 2.8rem);
+	line-height: 1.2;
+}
+
+.featured-video-heading p {
+	margin: 0;
+	color: #555b70;
+	font-size: 1.05rem;
+	line-height: 1.65;
+}
+
+.featured-video-frame {
+	width: min(1120px, 100%);
+	margin: 0 auto;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: #080d24;
+	border: 6px solid #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 24px 60px rgba(20, 27, 68, 0.22);
+}
+
+.featured-video-frame iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+@media (max-width: 600px) {
+	.featured-video-section {
+		padding: 48px 5%;
+	}
+
+	.featured-video-heading {
+		margin-bottom: 22px;
+	}
+
+	.featured-video-frame {
+		border-width: 3px;
+		border-radius: 12px;
+	}
+}
