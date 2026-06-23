@@ -5,7 +5,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://jpsjaisinghpura.in/index.html</loc>
+    <loc>https://jpsjaisinghpura.in/</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
   
   <!-- Courses Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/course.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/course.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -21,7 +21,7 @@
   
   <!-- Facilities Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/facilities.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/facilities.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
   
   <!-- Fees & Scholarship Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/Fee%20&amp;%20Scholarship.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/fee-scholarship.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -37,7 +37,7 @@
   
   <!-- Gallery Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/schoolgalley.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/gallery.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -45,7 +45,7 @@
   
   <!-- Results Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/Results.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/results.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -53,7 +53,7 @@
   
   <!-- Principal Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/principal.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/principal.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -61,7 +61,7 @@
   
   <!-- Manager Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/manager.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/manager.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -69,7 +69,7 @@
   
   <!-- Teacher Hiring Page -->
   <url>
-    <loc>https://jpsjaisinghpura.in/teacherhire.html</loc>
+    <loc>https://jpsjaisinghpura.in/pages/teacher-hiring.html</loc>
     <lastmod>2024-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

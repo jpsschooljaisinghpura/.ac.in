@@ -1235,7 +1235,6 @@ section.testimonials {
 	margin: auto;
 	position: relative;
 	overflow: hidden;
-	/* background-image: url('app\ back.png'); */
 }
 
 .app-slider .last {
@@ -1307,7 +1306,6 @@ section.testimonials {
 		margin: auto;
 		position: relative;
 		overflow: hidden;
-		/* background-image: url('app\ back.png'); */
 	}
 }
 

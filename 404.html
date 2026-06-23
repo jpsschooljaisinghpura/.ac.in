@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Jyoti Public Senior Secondary School</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    body{margin:0;font-family:Arial,sans-serif;background:#f5f7ff;color:#1f2550;display:grid;min-height:100vh;place-items:center}
+    main{max-width:680px;padding:48px 24px;text-align:center}h1{font-size:clamp(2rem,7vw,4rem);margin:.2em 0}
+    p{font-size:1.1rem;line-height:1.6}a{color:#1747c8;font-weight:700}
+  </style>
+  <script>
+    (function () {
+      var routes = {
+        "/admission.html": "/pages/admission.html",
+        "/admissions.html": "/pages/admission.html",
+        "/course.html": "/pages/course.html",
+        "/courses.html": "/pages/course.html",
+        "/facilities.html": "/pages/facilities.html",
+        "/fee & scholarship.html": "/pages/fee-scholarship.html",
+        "/fee-scholarship.html": "/pages/fee-scholarship.html",
+        "/results.html": "/pages/results.html",
+        "/schoolgalley.html": "/pages/gallery.html",
+        "/schoolgallery.html": "/pages/gallery.html",
+        "/gallery.html": "/pages/gallery.html",
+        "/principal.html": "/pages/principal.html",
+        "/director.html": "/pages/principal.html",
+        "/director-desk.html": "/pages/principal.html",
+        "/manager.html": "/pages/manager.html",
+        "/management.html": "/pages/manager.html",
+        "/teacherhire.html": "/pages/teacher-hiring.html",
+        "/teacher-hiring.html": "/pages/teacher-hiring.html"
+      };
+      var path = decodeURIComponent(window.location.pathname).toLowerCase().replace(/\/+$/, "") || "/";
+      if (routes[path]) window.location.replace(routes[path] + window.location.search + window.location.hash);
+    }());
+  </script>
+</head>
+<body>
+  <main>
+    <img src="/images/icons/logopng.png" alt="JPS logo" width="110" height="110">
+    <h1>Page not found</h1>
+    <p>The page may have moved during our website upgrade.</p>
+    <p><a href="/">Return to Home</a> · <a href="/pages/gallery.html">Gallery</a> · <a href="/pages/results.html">Results</a></p>
+  </main>
+</body>
+</html>
+
